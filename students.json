@@ -1,1 +1,90 @@
-
+[
+  {
+    "student_id": "b63f0a4a-3d2e-4db6-8a88-ec22b61d50b6",
+    "first_name": "Arjun",
+    "last_name": "Verma",
+    "email": "arjun.verma.mobiledev@gmail.com",
+    "profile_image": "https://dummyimage.com/200x200/aaaaaa/000000.png&text=Arjun+V",
+    "skills": [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "REST APIs",
+      "UI Design",
+      "SQLite",
+      "Git",
+      "Java",
+      "Kotlin",
+      "Android Studio"
+    ],
+    "projects": [
+      {
+        "title": "Fitness Tracker App",
+        "description": "Developed a cross-platform fitness app using Flutter with workout logging, goal tracking, and Firebase Auth.",
+        "tech_stack": [
+          "Flutter",
+          "Dart",
+          "Firebase"
+        ],
+        "project_url": "https://github.com/arjunverma/fit-track"
+      },
+      {
+        "title": "Campus Connect App",
+        "description": "Built a mobile app for college students to access events, notices, and chat with peers.",
+        "tech_stack": [
+          "Flutter",
+          "Firebase",
+          "Cloud Firestore"
+        ],
+        "project_url": "https://github.com/arjunverma/campus-connect"
+      }
+    ],
+    "experience": [
+      {
+        "company": "AppForge Technologies",
+        "role": "Mobile Developer Intern",
+        "start_date": "2024-04-01",
+        "end_date": "2024-07-01",
+        "description": "Worked on Flutter-based mobile apps for clients, integrated backend APIs, and handled Firebase auth and notifications."
+      }
+    ],
+    "certifications_and_licenses": [
+      {
+        "title": "Flutter Development Bootcamp",
+        "issuing_organization": "Udemy",
+        "credential_id": "UDEMY-FLUTTER-654321",
+        "credential_url": "https://udemy.com/certificate/udemy-flutter-654321",
+        "issue_date": "2024-02-20",
+        "expiration_date": null
+      },
+      {
+        "title": "Android App Development",
+        "issuing_organization": "Google Developer Training",
+        "credential_id": "GOOGLE-ANDROID-2023-123",
+        "credential_url": "https://developers.google.com/certification/android",
+        "issue_date": "2023-09-10",
+        "expiration_date": null
+      }
+    ],
+    "job_preferences": {
+      "desired_roles": [
+        "Mobile App Developer Intern",
+        "Flutter Developer Intern",
+        "Android Developer Intern"
+      ],
+      "preferred_locations": [
+        "Remote",
+        "Bangalore",
+        "Hyderabad",
+        "Delhi NCR"
+      ],
+      "employment_type": [
+        "Internship"
+      ],
+      "remote": true,
+      "interests": [
+        "inter"
+      ]
+    }
+  }
+]

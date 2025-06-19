@@ -16,7 +16,7 @@ def analyze_matches(pickle_file_path: str, student_data: list) -> str:
         str: A human-readable, structured match analysis.
     """
 
-    TOGETHER_API_KEY = st.secrets["TOGETHER_API_KEY"]
+    TOGETHER_API_KEY = os.getenv("TOGETHER_API_KEY")
     MODEL_NAME = "deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free"
 
     if not TOGETHER_API_KEY:
@@ -46,7 +46,7 @@ def analyze_matches(pickle_file_path: str, student_data: list) -> str:
 
     # Prepare prompts
     system_prompt = """
-You are an expert career advisor and the world’s most accurate job matcher, capable of analyzing JSON data with precision and delivering deep, insightful evaluations.
+You are an expert career advisor and the world’s most accurate job matcher, capable of analyzing JSON data with precision and delivering deep, insightful evaluations. You have to save some context length for output also don't consume the full context in the think tag.
 
 Below is a JSON array of job postings (companies). When I give you a student profile (also in JSON), you must:
 
@@ -65,7 +65,7 @@ Below is a JSON array of job postings (companies). When I give you a student pro
 
 🧾 **Job X (Start Date: YYYY-MM-DD)** – “{{Job Title}} at {{Company Name}}”
 - 🔢 Match Score: XX%
-- ✅ Why it's a good fit:
+- ✅ Why it's a good fit (explain in detail) :
   • ...
   • ...
 - ⚠️ Potential difficulties / mismatches:
@@ -85,7 +85,7 @@ Below is a JSON array of job postings (companies). When I give you a student pro
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
             ],
-            temperature=0.7
+            temperature=0.1
         )
         return completion.choices[0].message.content
 

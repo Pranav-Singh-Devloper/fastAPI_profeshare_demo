@@ -12,3 +12,11 @@ uvicorn
 sse_starlette
 huggingface_hub
 openai
+supabase
+fastapi
+uvicorn[standard]
+python-dotenv
+supabase
+nltk
+rank_bm25
+beautifulsoup4
